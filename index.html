@@ -12,12 +12,10 @@
 
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-      <!-- create your content here -->
       <a-assets>
-        <a-asset-item id="tree-obj" src="assets/Pillar.obj"></a-asset-item>
+        <a-asset-item id="toolbox" src="assets/ToolBoxUpdatedFBX.gltf"></a-asset-item>
       </a-assets>
-    
-      <a-entity position="0 0 -10" obj-model="obj: #tree-obj;"></a-entity>
+      <a-entity position = "0 0 -5" gltf-model="#toolbox" modify-materials animation-mixer></a-entity>
 
       <!-- define a camera which will move according to the marker position -->
       <a-marker-camera preset='hiro'></a-marker-camera>
