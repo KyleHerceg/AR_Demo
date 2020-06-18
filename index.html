@@ -17,9 +17,11 @@
           <a-asset-item id="toolbox" src="assets/ToolBoxUpdatedFBX.gltf"></a-asset-item>
         </a-assets>
 
-        <a-gltf-model class = "clickable" cursor-listener position = "0 0 -5" src="#toolbox"></a-gltf-model>      
-
+        <a-marker cursor-listener>
+          <a-gltf-model position = "0 0 -5" src="#toolbox"></a-gltf-model>      
+        </a-marker>
         <a-entity camera></a-entity>
+        
     </a-scene>
   </body>
 </html>
